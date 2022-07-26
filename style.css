@@ -1,0 +1,64 @@
+:root {
+  --primary: #dd7777;
+  --background: #242424;
+  --white: #ffffff;
+}
+
+* {
+  /* outline: 1px solid red; */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background);
+}
+
+/* HERO SECTION */
+.hero-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  max-width: 50%;
+  animation: appear 2s alternate-reverse 1;
+}
+
+@keyframes appear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+#hero-arrow-down {
+  position: absolute;
+  bottom: 25px;
+  color: #353535;
+  font-size: 25px;
+  animation: bounce 1s alternate infinite;
+}
+
+@keyframes bounce {
+  from {
+    bottom: 20px;
+  }
+  to {
+    bottom: 25px;
+  }
+}
+
+/** RESPONSIVE DESIGN - DESKTOP **/
+@media screen and (min-width: 1000px) {
+  #logo {
+    max-width: 25%;
+  }
+}

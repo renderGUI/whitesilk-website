@@ -15,6 +15,7 @@ body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   background-color: var(--white);
+  position: relative;
 }
 
 .heading {
@@ -234,6 +235,7 @@ span {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-bottom: 6rem;
 }
 
 #bio-subheading {
@@ -274,6 +276,23 @@ span {
   font-size: 1.125rem;
   color: var(--light-gray);
   font-weight: 300;
+}
+
+/* FOOTER SECTION */
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 6.25em;
+  background-color: var(--background);
+  overflow: hidden;
+}
+
+.footer-text {
+  color: var(--white);
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 /** RESPONSIVE DESIGN - DESKTOP **/

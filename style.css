@@ -15,7 +15,6 @@ body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   background-color: var(--white);
-  position: relative;
 }
 
 .heading {
@@ -47,6 +46,7 @@ span {
   justify-content: center;
   align-items: center;
   background-color: var(--background);
+  position: relative;
 }
 
 #logo {
@@ -65,7 +65,7 @@ span {
 
 #hero-arrow-down {
   position: absolute;
-  bottom: 25px;
+  bottom: 20px;
   color: #353535;
   font-size: 25px;
   animation: bounce 1s alternate infinite;
@@ -236,6 +236,7 @@ span {
   align-items: center;
   text-align: center;
   padding-bottom: 6rem;
+  position: relative;
 }
 
 #bio-subheading {
@@ -283,7 +284,6 @@ span {
   position: absolute;
   bottom: 0;
   width: 100%;
-  margin-top: 6.25em;
   background-color: var(--background);
   overflow: hidden;
 }
@@ -325,9 +325,17 @@ span {
     width: 50%;
   }
 
+  #info-subheading {
+    width: 95%;
+  }
+
   .perks-container {
     display: flex;
     flex-direction: row;
+  }
+
+  .perk-subheading {
+    width: 95%;
   }
 
   /* ABOUT SECTION */

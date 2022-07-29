@@ -22,15 +22,22 @@
   <body>
     <!-- HERO SECTION -->
     <header class="hero-container">
+      <div class="contact-options">
+        <a href="tel:919-330-0740"><i class="fa-solid fa-phone"></i></a>
+        <a href="mailto:whitesilkwebdev@gmail.com"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+      </div>
       <img
         id="logo"
         src="/images/logo.png"
         alt="whitesilk web development logo"
       />
+      <a class="hero-button" href="#contact">Get in touch!</a>
       <i id="hero-arrow-down" class="fa-solid fa-circle-arrow-down"></i>
     </header>
     <!-- PRICING SECTION -->
-    <section class="pricing-container">
+    <main class="pricing-container">
       <div class="image-area">
         <img
           id="investing-img"
@@ -98,7 +105,7 @@
           </div>
         </section>
       </article>
-    </section>
+    </main>
     <!-- ABOUT SECTION -->
     <section class="about-container">
       <h2 class="heading"><span>WHAT</span> WE DO</h2>
@@ -198,17 +205,71 @@
       <h2 class="heading"><span>WHO</span> WE ARE</h2>
       <p class="heading-icon">-----<i class="fa-solid fa-user"></i>-----</p>
       <p class="subheading" id="bio-subheading">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum pariatur. Excepteur sint occaecat cupidatat non
-        proident.
+        I'm Ismael, a software engineer based out of North Carolina. I've been
+        coding for over 5 years now, and I specialize in front-end web
+        development. I started this company to help local business owners around
+        my town, but now I help businesses all across the country. Aside from
+        running Whitesilk Web Development, I also have a small blog where I
+        teach others about web development.
         <a class="bio-link" href="https://www.ismaelhuerta.com/">LEARN MORE</a>
       </p>
       <img class="bio-img" src="/images/render.png" alt="ismael huerta" />
       <p class="bio-name">Ismael Huerta</p>
       <p class="bio-title">Software Engineer/Owner</p>
+    </section>
+    <!-- CONTACT SECTION -->
+    <section class="contact-container" id="contact">
+      <h2 class="heading" id="about-heading"><span>CONTACT</span> US</h2>
+      <p class="heading-icon">
+        -----<i class="fa-solid fa-envelope-open-text"></i>-----
+      </p>
+      <div class="form-area">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify-recaptcha="true"
+          data-netlify="true"
+        >
+          <div class="name-field">
+            <input
+              type="text"
+              class="input-box"
+              name="name"
+              placeholder="Name"
+              required
+            />
+          </div>
+          <div class="email-field">
+            <input
+              type="text"
+              class="input-box"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+          <div class="subject-field">
+            <input
+              type="text"
+              class="input-box"
+              name="subject"
+              placeholder="Subject"
+              required
+            />
+          </div>
+          <div class="message-field">
+            <textarea
+              class="input-box text-box"
+              name="message"
+              placeholder="Your Message..."
+              required
+            ></textarea>
+          </div>
+
+          <div data-netlify-recaptcha="true"></div>
+          <button type="submit" class="contact-button">Submit</button>
+        </form>
+      </div>
 
       <!-- FOOTER SECTION -->
       <footer class="footer-container">

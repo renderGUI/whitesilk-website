@@ -291,9 +291,8 @@ span {
   width: 150px;
   height: 150px;
   margin-bottom: 1px;
-  background-color: var(--primary);
+  border: 5px solid var(--primary);
   border-radius: 50%;
-  padding: 10px;
 }
 
 .bio-link {
@@ -342,7 +341,7 @@ span {
 }
 
 .input-box {
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   font-family: "Roboto", sans-serif;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -350,10 +349,16 @@ span {
   padding: 10px 5px 10px 10px;
   border: 1px solid #cbcbcb;
   border-radius: 5px;
+  width: 300px;
 }
 
 .input-box:focus::placeholder {
   color: transparent;
+}
+
+.input-box:focus {
+  outline: none;
+  border: 1px solid var(--light-gray);
 }
 
 .contact-button {
@@ -491,6 +496,7 @@ span {
 
   .input-box {
     width: 600px;
+    font-size: 1.5rem;
   }
 
   .text-box {

@@ -70,10 +70,6 @@ span {
   color: var(--white);
 }
 
-.contact-options a:visited {
-  color: #353535;
-}
-
 #logo {
   max-width: 60%;
   animation: appear 2s alternate-reverse 1;
@@ -102,10 +98,6 @@ span {
 .hero-button:hover {
   background-color: #c76565;
   transform: scale(1.1);
-}
-
-.hero-button:visited {
-  color: var(--white);
 }
 
 #hero-arrow-down {
@@ -144,6 +136,15 @@ span {
 
 .info-area {
   width: 90%;
+}
+
+.pricing-link {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.pricing-link:hover {
+  color: #c76565;
 }
 
 .perk-heading::before {
@@ -268,10 +269,6 @@ span {
   background-color: #c76565;
 }
 
-.project-button:visited {
-  color: var(--white);
-}
-
 /* BIO SECTION */
 .bio-container {
   display: flex;
@@ -302,10 +299,6 @@ span {
 
 .bio-link:hover {
   color: #c76565;
-}
-
-.bio-link:visited {
-  color: var(--primary);
 }
 
 .bio-name {
@@ -390,7 +383,6 @@ span {
 .footer-text {
   color: var(--white);
   font-size: 1.125rem;
-  font-weight: bold;
   text-align: center;
 }
 

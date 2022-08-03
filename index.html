@@ -20,9 +20,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <script defer src="/index.js"></script>
     <title>Whitesilk Web Development</title>
   </head>
   <body>
+    <div class="modal hidden">
+      <img id="modal-img" src="" />
+    </div>
     <!-- HERO SECTION -->
     <header class="hero-container">
       <div class="contact-options">
@@ -161,11 +165,38 @@
       </div>
     </section>
     <!-- PORTFOLIO SECTION -->
-    <!-- <section class="portfolio-container">
+    <section class="portfolio-container">
       <h2 class="heading" id="about-heading"><span>OUR</span> PORTFOLIO</h2>
       <p class="heading-icon">-----<i class="fa-solid fa-globe"></i>-----</p>
       <div class="projects">
+        <div class="project" data-number-type="0">
+          <img
+            class="project-img"
+            src="/images/img-0.png"
+            alt="it proximity software"
+            data-number-type="0"
+          />
+        </div>
+        <div class="project" data-number-type="1">
+          <img
+            class="project-img"
+            src="/images/img-1.png"
+            alt="cronus enterprise"
+            data-number-type="1"
+          />
+        </div>
+        <div class="project" data-number-type="2">
+          <img
+            class="project-img"
+            src="/images/img-2.png"
+            alt="hearts of meditation"
+            data-number-type="2"
+          />
+        </div>
+      </div>
+      <!-- <div class="projects">
         <div class="project">
+          <img class="project-img" src="/images/itproximitysoftware.png" alt="it proximity software">
           <h3 class="project-heading">IT Enterprises</h3>
           <p class="project-subheading">Raleigh, NC</p>
           <p class="project-description">
@@ -174,10 +205,11 @@
             cillum dolore eu fugiat nulla pariatur.
           </p>
           <a class="project-button" href="https://www.google.com/"
-            >Visit Website</a
+          >View</a
           >
         </div>
         <div class="project">
+          <img class="project-img" src="/images/cronusenterprise.png" alt="cronus enterprise">
           <h3 class="project-heading">Sally's Bakery</h3>
           <p class="project-subheading">Miami, FL</p>
           <p class="project-description">
@@ -186,10 +218,11 @@
             cillum dolore eu fugiat nulla pariatur.
           </p>
           <a class="project-button" href="https://www.google.com/"
-            >Visit Website</a
+          >View</a
           >
         </div>
         <div class="project">
+          <img class="project-img" src="/images/heartsofmeditation.png" alt="hearts of meditation">
           <h3 class="project-heading">Photo Studios</h3>
           <p class="project-subheading">Atlanta, GA</p>
           <p class="project-description">
@@ -198,11 +231,11 @@
             cillum dolore eu fugiat nulla pariatur.
           </p>
           <a class="project-button" href="https://www.google.com/"
-            >Visit Website</a
+            >View</a
           >
         </div>
-      </div>
-    </section> -->
+      </div> -->
+    </section>
     <!-- BIO SECTION -->
     <section class="bio-container">
       <h2 class="heading"><span>WHO</span> WE ARE</h2>
